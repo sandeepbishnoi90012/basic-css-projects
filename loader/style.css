@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(231, 229, 229, 0.25);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+body .div1 {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.35);
+  -webkit-animation: ani1 2s linear 0.1s infinite;
+          animation: ani1 2s linear 0.1s infinite;
+}
+body .div2 {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 40%;
+  left: 40.5%;
+  background-color: rgba(0, 0, 0, 0.35);
+  -webkit-animation: ani2 2s linear 0.1s infinite;
+          animation: ani2 2s linear 0.1s infinite;
+}
+body .div3 {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.35);
+  -webkit-animation: ani3 2s linear infinite;
+          animation: ani3 2s linear infinite;
+}
+
+@-webkit-keyframes ani3 {
+  25% {
+    left: 40.5%;
+    top: 50%;
+  }
+  50% {
+    top: 40%;
+    left: 40.5%;
+  }
+  75% {
+    left: 50%;
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@keyframes ani3 {
+  25% {
+    left: 40.5%;
+    top: 50%;
+  }
+  50% {
+    top: 40%;
+    left: 40.5%;
+  }
+  75% {
+    left: 50%;
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+  }
+}
+@-webkit-keyframes ani1 {
+  25% {
+    left: 50%;
+    top: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 40.5%;
+  }
+  75% {
+    left: 40.5%;
+    top: 40%;
+  }
+  100% {
+    top: 40%;
+    left: 50%;
+  }
+}
+@keyframes ani1 {
+  25% {
+    left: 50%;
+    top: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 40.5%;
+  }
+  75% {
+    left: 40.5%;
+    top: 40%;
+  }
+  100% {
+    top: 40%;
+    left: 50%;
+  }
+}
+@-webkit-keyframes ani2 {
+  25% {
+    top: 40%;
+    left: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    left: 40.5%;
+    top: 50%;
+  }
+  100% {
+    top: 40%;
+    left: 40.5%;
+  }
+}
+@keyframes ani2 {
+  25% {
+    top: 40%;
+    left: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    left: 40.5%;
+    top: 50%;
+  }
+  100% {
+    top: 40%;
+    left: 40.5%;
+  }
+}/*# sourceMappingURL=style.css.map */

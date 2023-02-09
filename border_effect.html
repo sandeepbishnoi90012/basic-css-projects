@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            body{
+                background-color: #f1f1f1;
+                display: grid;
+                place-items: center;
+                margin-top: 380px;
+                align-items: center;
+            }
+            .btn{
+                position: relative;
+                height: 60px;
+                width: 170px;
+                background-color: rgb(239, 239, 159);
+                border: none;
+                font-size: large;
+                text-transform: uppercase;
+            }
+            .btn::before{
+                content: "";
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                width: 10%;
+                height: 20%;
+                border-top: 2px solid black ;
+                border-left: 2px solid black ;
+                transition: all 0.5s;
+            }
+            .btn::after{
+                content: "";
+                position: absolute;
+                bottom: -1px;
+                right: -1px;
+                width: 10%;
+                height: 20%;
+                border-bottom: 2px solid black ;
+                border-right: 2px solid black ;
+                transition: all 0.3s;
+            }
+            .btn:hover::before{
+                transform: rotate3d(360deg);
+                height: 100%;
+                width: 100%;
+            }
+            .btn:hover::after{
+                transform: rotate3d(360deg);
+                height: 100%;
+                width: 100%;
+            }
+
+    </style>
+</head>
+<body>
+    <button class="btn">Home</button>
+</body>
+</html>

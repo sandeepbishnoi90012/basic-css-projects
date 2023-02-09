@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(212, 212, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.card::before{
+    position: relative;
+    top: 0  px;
+    height: 450px;
+    width: 300px;
+    transition: all 0.3s;
+    background-color:antiquewhite;
+    content: "007";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(106, 170, 235);
+    font-size: 50px;
+}
+.card {
+    position: relative;
+    top: 50px;
+    height: 450px;
+    width: 300px;
+    transition: all 0.3s;
+    background-color: aqua;
+    .logo{
+       opacity: 0;
+        transition: all 0.4s;
+    }
+    .name{
+        opacity: 0;
+        transition: all 0.3s;
+    }  
+    .btn{
+        opacity: 0;
+        transition: all 0.3s;
+    }  
+    .text{
+        opacity: 0;
+        transition: all 0.3s;
+    }  
+}
+
+
+.card:hover::before{
+    opacity: 0;
+}
+
+.card:hover{
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    height: 450px;
+    width: 300px;
+    background-color: rgb(137, 191, 245);
+    padding: 20px 30px;
+    .logo {
+        opacity: 1;
+    position: absolute;
+    top: 40px;
+    height: 80px;
+    width: 80px;
+    left: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 95px;
+    font-size: 30px;
+  }
+  .name {
+    opacity: 1;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .text {
+    opacity: 1;
+    position: absolute;
+    top: 240px;
+    text-align: center;
+    left: 20px;
+    width: 250px;
+  }
+  .btn {
+    opacity: 1;
+    position: absolute;
+    top: 350px;
+    height: 50px;
+    width: 150px;
+    left: 70px;
+    text-transform: uppercase;
+    padding: 15px 10px 0px 24px;
+    border: 2px solid black;
+  }
+}

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    .box{
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        height: 40px;
+        width: 150px;
+        // border: 2px solid black;
+        color: #fff;
+    }
+    ::before{
+        content: "SANDEEP";
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        // transition: all 0.3s;
+        border-right: 4px solid greenyellow;
+        color: greenyellow;
+        animation: slide 2s  infinite alternate;
+        overflow: hidden;
+    }
+}
+@keyframes slide {
+    0%{width: 0%;}
+    14.28%{width: 14.28%;}
+    28.57%{width: 28.57%;}
+    42.85%{width: 42.85%;}
+    57.14%{width: 57.14%;}
+    71.42%{width: 71.42%;}
+    85.71%{width: 85.71%;}
+    100%{width: 100%;}
+}
